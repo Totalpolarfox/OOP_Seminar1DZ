@@ -22,6 +22,9 @@ public class AnimalFeed extends Product {
         this.animal = animal; 
         this.typeFeed = typeFeed;  
     }
-
+    public String displayInfo() {
+        // переопределяем (перегрузка) метод из родительского класса
+        return String.format("Корм для животных\n\t[Производитель: %s\n\tНаименование: %s\n\tСтоимость: %.2f\n\tДля животного: %s\n\tВид корма: %s\n\t]", brand, name, price, animal, typeFeed);
+    }
 
 }
