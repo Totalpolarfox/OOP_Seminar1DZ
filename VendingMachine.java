@@ -8,23 +8,11 @@ public class VendingMachine {
         this.products = products;
     }
 
-    public AnimalFeed getAnimal(String brand, String animal) {
+    public AnimalFeed getProduct(String brand, String animal, String typeFeed) {
         for (Product product : products) {
             if (product instanceof AnimalFeed) {
                 AnimalFeed animalFeed = (AnimalFeed)product;
-                if (animalFeed.getBrand().equals(brand) && animalFeed.getAnimal().equals(animal)) {
-                    return animalFeed;
-                }
-            }
-        }
-        return null;
-    }
-
-    public AnimalFeed getTypFeed(String brand, String typeFeed) {
-        for (Product product : products) {
-            if (product instanceof AnimalFeed) {
-                AnimalFeed animalFeed = (AnimalFeed)product;
-                if (animalFeed.getBrand().equals(brand) && animalFeed.getTypeFeed().equals(typeFeed)) {
+                if (animalFeed.getBrand().equals(brand) && animalFeed.getAnimal().equals(animal) && animalFeed.getTypeFeed().equals(typeFeed)) {
                     return animalFeed;
                 }
             }

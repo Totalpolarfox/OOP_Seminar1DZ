@@ -51,7 +51,7 @@ public class Program {
         }
 
         VendingMachine vendingMachine2 = new VendingMachine(list);
-        AnimalFeed animalFeedRes2 = vendingMachine2.getTypFeed("Royal Canin", "dry");
+        AnimalFeed animalFeedRes2 = vendingMachine2.getTypFeed("Royal Canin", "wet");
         if (animalFeedRes2 != null) {
             System.out.println("Вы купили: ");
             System.out.println(animalFeedRes2.displayInfo());
