@@ -1,9 +1,11 @@
 // Создать новый продукт на основе Product, создать ему хотя бы одно свойство (например, шоколад -> калории) и включить в список продуктов в вендинг машину.
 // Продемонстрировать работу класса по продаже товаров (как мы это делали на семинаре).
 
+import java.util.ArrayList;
+
 public class Program {
     public static void main(String[] args) {
-
+        
         AnimalFeed animalFeed1 = new AnimalFeed("Royal Canin", "Puppy", 1350, "dog", "dry");
         AnimalFeed animalFeed2 = new AnimalFeed("AlphaPet", "Satiety", 1700, "dog", "dry");
         AnimalFeed animalFeed3 = new AnimalFeed("Royal Canin", "Renal", 1100, "cat", "dry");
@@ -19,9 +21,25 @@ public class Program {
         AnimalFeed animalFeed13 = new AnimalFeed("Purina", "NutrySavoir", 1100, "cat", "wet");
         AnimalFeed animalFeed14 = new AnimalFeed("Perfect Fit", "Maitenance", 600, "cat", "wet");
         AnimalFeed animalFeed15 = new AnimalFeed("Felix", "OptySavoir", 800, "dog", "wet");
-        AnimalFeed animalFeed16 = new AnimalFeed("Purina", "Sensetive", 1000, "dog", "wet");
+        AnimalFeed animalFeed16 = new AnimalFeed("Purina", "Sensetive", 1000, "dog", "wet");      
         
-            
+        ArrayList<Product> list = new ArrayList<>();
+        list.add(animalFeed1);
+        list.add(animalFeed2);
+        list.add(animalFeed3);
+        list.add(animalFeed4);
+        list.add(animalFeed5);
+        list.add(animalFeed6);
+        list.add(animalFeed7);
+        list.add(animalFeed8);
+        list.add(animalFeed9);
+        list.add(animalFeed10);
+        list.add(animalFeed11);
+        list.add(animalFeed12);
+        list.add(animalFeed13);
+        list.add(animalFeed14);
+        list.add(animalFeed15);
+        list.add(animalFeed16);
 
     }
 }
