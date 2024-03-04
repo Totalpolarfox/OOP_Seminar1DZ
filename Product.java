@@ -1,0 +1,7 @@
+/**
+ * Продукт
+ */
+
+public class Product {
+
+}
