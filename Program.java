@@ -10,7 +10,7 @@ public class Program {
         AnimalFeed animalFeed2 = new AnimalFeed("AlphaPet", "Satiety", 1700, "dog", "dry");
         AnimalFeed animalFeed3 = new AnimalFeed("Royal Canin", "Renal", 1100, "cat", "dry");
         AnimalFeed animalFeed4 = new AnimalFeed("Sheba", "Adult", 950, "dog", "wet");
-        AnimalFeed animalFeed5 = new AnimalFeed("AlphaPet", "Exigent", 1000, ""dog", wet");
+        AnimalFeed animalFeed5 = new AnimalFeed("AlphaPet", "Exigent", 1000, "dog", "wet");
         AnimalFeed animalFeed6 = new AnimalFeed("Sheba", "Sensible", 1200, "cat", "dry");
         AnimalFeed animalFeed7 = new AnimalFeed("Royal Canin", "Sterelised", 850, "cat", "wet");
         AnimalFeed animalFeed8 = new AnimalFeed("Felix", "Kitten", 900, "cat", "wet");
