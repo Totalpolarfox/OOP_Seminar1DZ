@@ -20,4 +20,16 @@ public class VendingMachine {
         return null;
     }
 
+    public AnimalFeed getTypFeed(String brand, String typeFeed) {
+        for (Product product : products) {
+            if (product instanceof AnimalFeed) {
+                AnimalFeed animalFeed = (AnimalFeed)product;
+                if (animalFeed.getBrand().equals(brand) && animalFeed.getTypeFeed().equals(typeFeed)) {
+                    return animalFeed;
+                }
+            }
+        }
+        return null;
+    }
+
 }
