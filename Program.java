@@ -41,5 +41,23 @@ public class Program {
         list.add(animalFeed15);
         list.add(animalFeed16);
 
+        VendingMachine vendingMachine1 = new VendingMachine(list);
+        AnimalFeed animalFeedRes1 = vendingMachine1.getAnimal("Purina", "dog");
+        if (animalFeedRes1 != null) {
+            System.out.println("Вы купили: ");
+            System.out.println(animalFeedRes1.displayInfo());
+        }else {
+            System.out.println("Такой товар в автомате отсутствует!");
+        }
+
+        VendingMachine vendingMachine2 = new VendingMachine(list);
+        AnimalFeed animalFeedRes2 = vendingMachine2.getTypFeed("Royal Canin", "dry");
+        if (animalFeedRes2 != null) {
+            System.out.println("Вы купили: ");
+            System.out.println(animalFeedRes2.displayInfo());
+        }else {
+            System.out.println("Такой товар в автомате отсутствует!");
+        }
+
     }
 }
