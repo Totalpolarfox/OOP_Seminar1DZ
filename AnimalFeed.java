@@ -17,4 +17,11 @@ public class AnimalFeed extends Product {
         this.typeFeed = typeFeed;
     }
 
+    public AnimalFeed(String brand, String name, double price, String animal, String typeFeed){
+        super(brand, name, price); // вызов конструктора из родительского класса
+        this.animal = animal; 
+        this.typeFeed = typeFeed;  
+    }
+
+
 }
